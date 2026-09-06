@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Find a simple Benzac acne-care routine built around your spot, skin and everyday needs.">
+  <title>Benzac First Fix | Find Your Routine</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">Free delivery above ₹499 <span>•</span> No login, selfie or stored answers</div>
+  <header class="topbar">
+    <a class="brand" href="#finder" aria-label="Benzac First Fix home">
+      <span class="brand-mark">B</span><span>BENZAC <small>FIRST FIX</small></span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <a href="#finder">Find my fix</a><a href="#shop">Shop</a><a href="#routine">How it works</a><a href="#care">Care guide</a>
+    </nav>
+    <button class="bag-button" id="bagButton" type="button" aria-label="Shopping bag, 0 items"><span aria-hidden="true">BAG</span><b id="bagCount">0</b></button>
+  </header>
+
+  <main>
+    <section class="finder-shell" id="finder">
+      <div class="finder-story">
+        <div class="story-copy">
+          <span class="eyebrow">YOUR FIRST FIX STARTS HERE</span>
+          <h1>One spot.<br><em>Your way forward.</em></h1>
+          <p>Answer five quick questions. We’ll match your spot, skin and routine to a simple next step.</p>
+          <div class="story-points"><span><b>5</b> quick questions</span><span><b>4</b> focused products</span><span><b>1</b> clear routine</span></div>
+        </div>
+        <img src="assets/02_product_family.jpg" alt="Benzac First Fix patch, cleansing bar, foaming cleanser and skin restore products">
+        <div class="price-bubble"><small>STARTING AT</small><b>₹99</b></div>
+      </div>
+
+      <div class="finder-card" aria-live="polite">
+        <div class="finder-topline">
+          <div><span class="finder-kicker">FIRST FIX FINDER</span><strong id="stepLabel">Question 1 of 5</strong></div><span id="progressText">20%</span>
+        </div>
+        <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+        <div id="finderStage"></div>
+      </div>
+    </section>
+
+    <section class="promise-strip" aria-label="Shopping benefits">
+      <div><span>01</span><b>Easy first step</b><small>Start with one clear action</small></div>
+      <div><span>02</span><b>Routine matched</b><small>Built around your answers</small></div>
+      <div><span>03</span><b>Parent-friendly</b><small>Simple formats and directions</small></div>
+      <div><span>04</span><b>Know when to ask</b><small>Red flags stay visible</small></div>
+    </section>
+
+    <section class="shop-section" id="shop">
+      <div class="section-heading">
+        <span class="eyebrow">THE FIRST FIX RANGE</span>
+        <div><h2>Start with the spot.<br><em>Build only what you need.</em></h2><p>Four focused products, arranged from immediate action to everyday care.</p></div>
+      </div>
+      <div class="product-showcase">
+        <article class="product-card featured" data-product="first-fix">
+          <div class="product-art"><img class="product-crop crop-patch" src="assets/03_patch_designs.jpg" alt="Purple First Fix patch concept"><small>6 PATCHES</small></div>
+          <div class="product-copy"><span class="role">START HERE</span><h3>Power Patch<br>First Fix 6</h3><p>For an emerging spot when you want a focused, low-fuss first action.</p><div class="product-buy"><strong>₹99</strong><button class="add-button" data-add="Power Patch First Fix 6" type="button">Add to bag</button></div></div>
+        </article>
+        <article class="product-card" data-product="bar">
+          <div class="product-art"><img class="product-crop crop-bar" src="assets/02_product_family.jpg" alt="Benzac cleansing bar concept"><small>75 g</small></div>
+          <div class="product-copy"><span class="role">CLEANSE</span><h3>Bar for Acne</h3><p>A familiar cleansing format for a simple everyday habit.</p><div class="product-buy"><strong>₹149</strong><button class="add-button" data-add="Bar for Acne" type="button">Add to bag</button></div></div>
+        </article>
+        <article class="product-card" data-product="cleanser">
+          <div class="product-art"><img class="product-crop crop-cleanser" src="assets/02_product_family.jpg" alt="Benzac foaming cleanser concept"><small>150 ml</small></div>
+          <div class="product-copy"><span class="role">ROUTINE</span><h3>Foaming Cleanser</h3><p>A gentle-feeling daily format for consistent cleansing without complexity.</p><div class="product-buy"><strong>₹449</strong><button class="add-button" data-add="Foaming Cleanser" type="button">Add to bag</button></div></div>
+        </article>
+        <article class="product-card" data-product="restore">
+          <div class="product-art"><img class="product-crop crop-restore" src="assets/03_patch_designs.jpg" alt="Benzac Skin Restore patch concept"><small>18 PIECES</small></div>
+          <div class="product-copy"><span class="role">AFTERCARE</span><h3>Power Patch<br>Skin Restore</h3><p>For a visible or settled spot when protection and post-spot care matter.</p><div class="product-buy"><strong>₹299</strong><button class="add-button" data-add="Power Patch Skin Restore" type="button">Add to bag</button></div></div>
+        </article>
+      </div>
+      <p class="fine-print">Use products only as directed on the approved pack. Product formats and prices shown are proposed for the India concept.</p>
+    </section>
+
+    <section class="routine-section" id="routine">
+      <div class="routine-image"><img src="assets/03_patch_designs.jpg" alt="Proposed ultrathin acne patch styles shown on Indian skin tones"><div class="image-caption"><b>Wear the fix.</b><span>Clinical core. Cultural skin.</span></div></div>
+      <div class="routine-content">
+        <span class="eyebrow">THE 3-STEP ROUTINE</span><h2>Clean. Patch. Peel.<br><em>Move on.</em></h2><p>Tap each step for the essentials. No ten-step routine. No internet hacks.</p>
+        <div class="steps" role="tablist" aria-label="Clean Patch Peel steps">
+          <button class="step active" data-step="clean" type="button"><span>01</span><b>Clean</b><small>Clean hands. Dry skin.</small></button>
+          <button class="step" data-step="patch" type="button"><span>02</span><b>Patch</b><small>Match the patch to the spot.</small></button>
+          <button class="step" data-step="peel" type="button"><span>03</span><b>Peel</b><small>Remove as directed.</small></button>
+        </div>
+        <article id="stepDetail"><b>Start gently.</b><p>Cleanse without scrubbing. Pat the area completely dry so the patch can adhere properly.</p><div class="do-dont"><span>DO: clean hands and dry skin</span><span>AVOID: picking or toothpaste</span></div></article>
+      </div>
+    </section>
+
+    <section class="campaign-section">
+      <img src="assets/01_campaign_hero.jpg" alt="Two young adults getting ready, one wearing a purple lightning acne patch">
+      <div class="campaign-overlay"><span class="eyebrow light">#SPOTSORTED</span><h2>Got a spot?<br><em>Show you sorted it.</em></h2><p>Because handling the spot should feel more visible than hiding it.</p><a class="light-button" href="#finder">Find my fix</a></div>
+    </section>
+
+    <section class="care-section" id="care">
+      <div class="care-copy">
+        <span class="eyebrow">CARE THAT KNOWS ITS LIMITS</span><h2>A simple routine.<br><em>A clear red-flag rule.</em></h2><p>Powerful care starts with knowing when a product is enough and when professional advice comes first.</p>
+        <ul><li><b>Keep it simple:</b> use products exactly as directed and avoid picking.</li><li><b>Pause experiments:</b> do not stack harsh hacks or unfamiliar actives.</li><li><b>Speak to a dermatologist:</b> for painful, deep, widespread, persistent or scarring acne.</li></ul>
+        <a class="primary-button" href="#finder">Build my routine</a>
+      </div>
+      <img src="assets/06_dermatologist.jpg" alt="Dermatologist speaking with a young person and parent during a consultation">
+    </section>
+
+    <section class="faq-section">
+      <div class="section-heading compact"><span class="eyebrow">QUICK ANSWERS</span><div><h2>Before you begin.</h2></div></div>
+      <div class="faq-list">
+        <details><summary>Does the finder diagnose acne?</summary><p>No. It provides simple product guidance from your answers. It does not replace medical advice.</p></details>
+        <details><summary>Are my answers saved?</summary><p>No. The finder works in your browser without a login, selfie or stored answers.</p></details>
+        <details><summary>Can I use a patch on every kind of spot?</summary><p>No. Match the product to the spot type and follow the approved pack directions. Seek professional advice for red-flag symptoms.</p></details>
+        <details><summary>What if my skin feels sensitive?</summary><p>Keep the routine minimal, follow the pack guidance and stop if irritation occurs. Ask a pharmacist or dermatologist when unsure.</p></details>
+      </div>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <aside class="bag-drawer" id="bagDrawer" aria-hidden="true" aria-label="Shopping bag">
+    <div class="bag-head"><div><small>YOUR BAG</small><h2>First Fix picks</h2></div><button id="closeBag" type="button" aria-label="Close shopping bag">×</button></div>
+    <div id="bagItems" class="bag-items"><p>Your bag is empty. Use the finder or shop the range.</p></div>
+    <div class="bag-footer"><div><span>Subtotal</span><b id="bagSubtotal">₹0</b></div><button type="button" id="checkoutButton">Continue</button><small>Final availability, pack claims and checkout are subject to launch approval.</small></div>
+  </aside>
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <footer>
+    <div class="brand footer-brand"><span class="brand-mark">B</span><span>BENZAC <small>FIRST FIX</small></span></div><p><b>WEAR THE FIX. #SPOTSORTED.</b><br>Simple first actions. Smarter everyday care.</p><p class="fine-print">Concept experience. Not medical advice. Final claims, packs and pricing require approval.</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
